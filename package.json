@@ -1,0 +1,60 @@
+{
+  "name": "docusign-code-examples",
+  "version": "1.0.0",
+  "description": "DocuSign eSignature Code examples using either Authorization Code Grant and JWT OAuth",
+  "main": "index.js",
+  "scripts": {
+    "debug": "node  --inspect-brk index.js",
+    "start": "node index.js",
+    "test": "mocha",
+    "update-sources": "node lib/utilities/updateSources.js",
+    "update-sources-debug": "node --inspect-brk lib/utilities/updateSources.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/docusign/code-examples-nodejs"
+  },
+  "author": "DocuSign, Inc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/docusign/code-examples-nodejs/issues"
+  },
+  "homepage": "https://github.com/docusign/code-examples-nodejs#readme",
+  "engines": {
+    "node": ">=8.10"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "csurf": "^1.10.0",
+    "docusign-admin": "^1.1.0",
+    "docusign-click": "^1.2.2",
+    "docusign-esign": "^5.16.0",
+    "docusign-monitor": "^1.1.0",
+    "docusign-rooms": "^1.1.0",
+    "ejs": "^3.1.7",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.16.2",
+    "fs": "0.0.1-security",
+    "fs-extra": "^6.0.1",
+    "helmet": "^3.18.0",
+    "jsonwebtoken": "^8.5.1",
+    "memorystore": "^1.6.1",
+    "moment": "^2.29.4",
+    "node-fetch": "2.6.7",
+    "passport": "^0.4.0",
+    "passport-docusign": "^1.1.0",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "stream": "0.0.2",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^9.1.3"
+  }
+}

@@ -1,0 +1,9 @@
+<% include("functions") %>
+
+<% if (! locals.dsConfig.multiSourceChooser) { %>
+    <p>
+        <%- 
+            formatString(locals.manifest.SupportingTexts.ViewSourceFile, formatString('<a target="_blank" href="{0}">{1}</a>', sourceUrl, sourceFile)) 
+        %>
+    </p>
+<% } %>

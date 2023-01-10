@@ -1,0 +1,18 @@
+<% locals.manifest.Groups.forEach(function(group) { %>
+    <% group.Examples.forEach(function(example) { %>
+        <% if ((!example.SkipForLanguages || !example.SkipForLanguages.includes("node")) && "eg".concat("0".repeat(3 - example.ExampleNumber.toString().length)).concat(example.ExampleNumber) == "eg001") { %>
+            <% if (example.CFREnabled == "AllAccounts" || example.CFREnabled == "NonCFR") { %>
+                <h4
+                    id=<%= "example".concat("0".repeat(3 - example.ExampleNumber.toString().length)).concat(example.ExampleNumber) %>
+                >
+                    <a 
+                        href=<%= "eg".concat("0".repeat(3 - example.ExampleNumber.toString().length)).concat(example.ExampleNumber) %>>
+                        <%= example.ExampleName %>
+                    </a>
+                </h4>
+
+                <p><%- example.ExampleDescription %></p>
+            <% } %>
+        <% } %>
+    <% }); %>
+<% }); %>
